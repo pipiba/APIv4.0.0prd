@@ -1,0 +1,322 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  增值服务 - API电子合同签署v4.0.0PRD
+  
+  </title>
+ <meta name="description" content="">
+ <link href="atom.xml" rel="alternate" title="API电子合同签署v4.0.0PRD" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+    <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+<div id="header">
+    <h1><a href="index.html">API电子合同签署v4.0.0PRD</a></h1>
+</div>
+
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; API电子合同签署v4.0.0PRD</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+      <li><a href="index.html">Home</a></li>
+      
+        <li class="divider"></li>
+        <li><label>修订记录</label></li>
+
+          
+            <li><a title="修订记录" href="15110665672294.html">修订记录</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>需求概述</label></li>
+
+          
+            <li><a title="背景" href="15110667020227.html">背景</a></li>
+          
+            <li><a title="功能架构" href="15110670145417.html">功能架构</a></li>
+          
+            <li><a title="词汇表" href="15110670247476.html">词汇表</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>需求详述</label></li>
+
+          
+            <li><a title="用户模块" href="15110672088086.html">用户模块</a></li>
+          
+            <li><a title="印模模块" href="%E5%8D%B0%E6%A8%A1%E6%A8%A1%E5%9D%97.html">印模模块</a></li>
+          
+            <li><a title="合同模块" href="15110672682227.html">合同模块</a></li>
+          
+            <li><a title="页面相关" href="15110672956539.html">页面相关</a></li>
+          
+            <li><a title="增值服务" href="15110673461800.html">增值服务</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>附录</label></li>
+
+          
+            <li><a title="附录" href="15110673521487.html">附录</a></li>
+          
+
+      
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+        <section id="main-content" role="main" class="scroll-container">
+
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+                <nav>
+                  <ul id="side-nav" class="side-nav">
+
+                    
+                      <li class="side-title"><span>修订记录</span></li>
+                        
+                          <li><a title="修订记录" href="15110665672294.html">修订记录</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>需求概述</span></li>
+                        
+                          <li><a title="背景" href="15110667020227.html">背景</a></li>
+                        
+                          <li><a title="功能架构" href="15110670145417.html">功能架构</a></li>
+                        
+                          <li><a title="词汇表" href="15110670247476.html">词汇表</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>需求详述</span></li>
+                        
+                          <li><a title="用户模块" href="15110672088086.html">用户模块</a></li>
+                        
+                          <li><a title="印模模块" href="%E5%8D%B0%E6%A8%A1%E6%A8%A1%E5%9D%97.html">印模模块</a></li>
+                        
+                          <li><a title="合同模块" href="15110672682227.html">合同模块</a></li>
+                        
+                          <li><a title="页面相关" href="15110672956539.html">页面相关</a></li>
+                        
+                          <li><a title="增值服务" href="15110673461800.html">增值服务</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>附录</span></li>
+                        
+                          <li><a title="附录" href="15110673521487.html">附录</a></li>
+                        
+
+                    
+                  </ul>
+                </nav>
+                </div>
+              </div>
+            </div>
+            <div class="large-9 medium-9 columns">
+
+ <div class="markdown-body">
+<h1>增值服务</h1>
+
+<h4 id="toc_0">公正服务</h4>
+
+<blockquote>
+<p>公正服务系统为API电子合同签署产品提供用户已签署完成合同的存证出证服务，本方案中重点说明存证环节；</p>
+
+<p>存证服务，需要用户自行调用接口请求服务；</p>
+</blockquote>
+
+<h5 id="toc_1">存证接口</h5>
+
+<p>请求content</p>
+
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>内容</th>
+<th>必须</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>contractID-Type</td>
+<td>合同编号类型（1合同ID2合同自定义编号）</td>
+<td>y</td>
+</tr>
+<tr>
+<td>IDContent</td>
+<td>编号信息</td>
+<td>y</td>
+</tr>
+</tbody>
+</table>
+
+<p>返回content</p>
+
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>内容</th>
+<th>必须</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>msg</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>code</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="toc_2">短信提醒</h4>
+
+<blockquote>
+<p>短信提醒支持应用层配置，在合同签署者完成签署事件后由系统向合同的签署者发送；系统校验是否开启短信服务，若开启则向SignerId（个人）的手机号发送签署通知短信;</p>
+
+<p>目前只支持中国大陆手机号用户短信服务</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th>发送节点</th>
+<th>发送者</th>
+<th>接收者</th>
+<th>短信模板</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>合同生效后（合同已完成）</td>
+<td>API服务</td>
+<td>签署用户（个人）</td>
+<td>【云合同】您的合同已签署完成，{URL}查看</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="toc_3">签署验证</h4>
+
+<blockquote>
+<p>使签署者在签署前，需要进行在系统注册时预留的手机的签署码认证校验，用户需通过签署码认证，方可进行签署；</p>
+
+<p>短信签署认证为应用层可配置，其使用场景可定义至签署角色的维度；</p>
+
+<p>短信签署认证起验证码机制为四位阿拉伯随机数字；其短信模板为：【云合同】合同签署码为{###}，签署码有效期15分钟，请勿泄露；</p>
+</blockquote>
+
+
+</div>
+
+<br /><br />
+<hr />
+
+<div class="row clearfix">
+  <div class="large-6 columns">
+	<div class="text-left" style="padding:15px 0px;">
+		
+	        <a href="15110672956539.html"  title="Previous Post: 页面相关">&laquo; 页面相关</a>
+	    
+	</div>
+  </div>
+  <div class="large-6 columns">
+	<div class="text-right" style="padding:15px 0px;">
+		
+	        <a href="15110673521487.html" 
+	        title="Next Post: 附录">附录 &raquo;</a>
+	    
+	</div>
+  </div>
+</div>
+
+<div class="row">
+<div style="padding:0px 0.93em;" class="share-comments">
+
+</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var currentURL = '15110673461800.html';
+		$('#side-nav a').each(function(){
+			if($(this).attr('href') == currentURL){
+				$(this).parent().addClass('active');
+			}
+		});
+	});
+</script>  
+</div></div>
+
+
+<div class="page-bottom">
+  <div class="row">
+  <hr />
+  <div class="small-9 columns">
+  <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+  <div class="small-3 columns">
+  <p class="copyright text-right"><a href="#header">TOP</a></p>
+  </div>
+   
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+    
+    
+    <script src="asset/js/foundation.min.js"></script>
+    <script src="asset/js/foundation/foundation.offcanvas.js"></script>
+    <script>
+      $(document).foundation();
+
+     
+    </script>
+    
+
+
+  </body>
+</html>
