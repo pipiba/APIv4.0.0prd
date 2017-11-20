@@ -195,7 +195,130 @@
 <h3 id="toc_3">关于新老数据的兼容</h3>
 
 <p>新的业务与老的业务分开，当老商户对接新API后，对其老的业务数据库进行固化并提供对外的查询接口，用于商户对老数据进行查询、下载用；<br/>
-<img src="media/15109055493475/15110130893989.jpg" alt=""/></p>
+<img src="media/15109055493475/15110130893989.jpg" alt=""/><br/>
+支持商户对老业务数据的合同查询接口定义如下：</p>
+
+<p>请求content</p>
+
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>内容</th>
+<th>必须</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>searchType</td>
+<td>查询类别（1开发者账户<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>2应用ID3签署者证件号<sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup>）</td>
+<td>y</td>
+</tr>
+<tr>
+<td>typeCode</td>
+<td>对应查询类型的具体信息</td>
+<td>y</td>
+</tr>
+<tr>
+<td>contractState</td>
+<td>需要查询合同的状态标识（1已完成2全部3已作废）</td>
+<td>y</td>
+</tr>
+<tr>
+<td>pageUme</td>
+<td>列表页数</td>
+<td>y</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>每页列表条数</td>
+<td>y</td>
+</tr>
+</tbody>
+</table>
+
+<p>返回content</p>
+
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>内容</th>
+<th>必须</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>msg</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>code</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>支持商户对老业务数据的合同下载接口定义如下：</p>
+
+<p>请求content</p>
+
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>内容</th>
+<th>必须</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>searchType</td>
+<td>查询类别（1开发者账户<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>2应用ID3签署者证件号）<sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup></td>
+<td>y</td>
+</tr>
+<tr>
+<td>typeCode</td>
+<td>对应查询类型的具体信息</td>
+<td>y</td>
+</tr>
+<tr>
+<td>contractState</td>
+<td>需要查询合同的状态标识（1已完成2全部3已作废）</td>
+<td>y</td>
+</tr>
+</tbody>
+</table>
+
+<p>返回content</p>
+
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>内容</th>
+<th>必须</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>msg</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>code</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 <h3 id="toc_4">设备兼容性需求</h3>
 
@@ -207,6 +330,14 @@
 
 <li id="fn1">
 <p>待签署状态下仅支持查看，不支持下载是安全性的考虑，合同下载仅提供给签署者范围&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>开发者账户本质上为客户的云合同账号&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn3">
+<p>签署者为个人则传个人身份证号，为企业则传组织机构代码/营业执照注册号/社会信用代码其中之一&nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
 </li>
 
 </ol>
