@@ -329,6 +329,11 @@
 <td>签署者唯一标识</td>
 <td>y</td>
 </tr>
+<tr>
+<td>sealID</td>
+<td>签署使用的印模ID</td>
+<td>n<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></td>
+</tr>
 </tbody>
 </table>
 
@@ -432,6 +437,11 @@
 <td>签署者唯一标识</td>
 <td>y</td>
 </tr>
+<tr>
+<td>sealID</td>
+<td>签署使用的印模ID</td>
+<td>n<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></td>
+</tr>
 </tbody>
 </table>
 
@@ -459,6 +469,17 @@
 </tr>
 </tbody>
 </table>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>若没传sealID，则默认使用最新维护的印模，若库中不存在印模，则报错&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
 
 
 </div>
